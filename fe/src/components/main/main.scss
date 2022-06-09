@@ -1,0 +1,30 @@
+* {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: purple;
+    width: 100%;
+    height: 100vh;
+    .introduce {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+        .introduce_text {
+            h1 {
+                font-size: 2px;
+            }
+        }
+    }
+}
