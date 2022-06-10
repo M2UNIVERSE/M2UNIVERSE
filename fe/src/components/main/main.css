@@ -7,13 +7,13 @@
 .main {
   color: white;
   font-family: 'Noto Sans KR', sans-serif;
-  background-color: purple;
-  width: 100%;
+  background-color: white;
+  width: 100vw;
   height: 100vh;
 }
 
 .main .introduce {
-  width: 60%;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,13 +27,14 @@
           transform: translate(-50%, -50%);
 }
 
-.main .introduce img {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-}
-
-.main .introduce .introduce_text h1 {
-  font-size: 2rem;
+.main .introduce .introduce_person_img {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+  position: fixed;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

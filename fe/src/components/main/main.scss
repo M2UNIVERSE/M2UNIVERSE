@@ -7,26 +7,24 @@
 .main {
     color: white;
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: purple;
-    width: 100%;
+    background-color: white;
+    width: 100vw;
     height: 100vh;
     .introduce {
-        width: 60%;
+        width: 100vw;
         display: flex;
         position: absolute;
         align-items: center;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        img {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-        }
-        .introduce_text {
-            h1 {
-                font-size: 2rem;
-            }
+        .introduce_person_img {
+            filter: brightness(30%);
+            position: fixed;
+            z-index: -1;
+            object-fit: cover;
+            width: 100vw;
+            height: 100vh;
         }
     }
 }
