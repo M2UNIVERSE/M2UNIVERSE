@@ -13,10 +13,14 @@
 }
 
 .main .introduce {
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -30,6 +34,6 @@
 }
 
 .main .introduce .introduce_text h1 {
-  font-size: 2px;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
