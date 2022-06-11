@@ -1,12 +1,30 @@
 import React from 'react'
 import './main.css'
-import m2uperson from '../../assets/M2U_person.jpg';
+import m2uBackGround from '../../assets/BackgroundVideo.mp4'
+import m2uBackGround2 from '../../assets/M2U_person.jpg';
 
 const Main = () => {
     return (
         <section className="main">
             <div className="introduce">
-                <img className='introduce_person_img' src={m2uperson} alt="M2U 사진" />
+                <video
+                    autoPlay="autoPlay"
+                    loop="loop"
+                    muted="muted"
+                    className='introduce_background'
+                    src={m2uBackGround}
+                    alt="M2U 사진"/>
+                <div className="introduce_text">
+                    <h1>M2UNIVERSE</h1>
+                    <p>For those who love M2U and those who love him.</p>
+                    <p className='arrow'>↓</p>
+                </div>
+            </div>
+
+            <div className="scroll_m2u"></div>
+
+            <div className="introduce_two">
+                <div className="introduce_m2u"></div>
             </div>
         </section>
     )

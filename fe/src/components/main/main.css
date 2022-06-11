@@ -1,3 +1,8 @@
+::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+
 * {
   font-size: 14px;
   margin: 0;
@@ -9,32 +14,92 @@
   font-family: 'Noto Sans KR', sans-serif;
   background-color: white;
   width: 100vw;
-  height: 100vh;
+  background-color: black;
 }
 
 .main .introduce {
   width: 100vw;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 50%;
+}
+
+.main .introduce .introduce_background {
+  width: 100vw;
+  height: 100vh;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .introduce .introduce_text {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 65%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-.main .introduce .introduce_person_img {
-  -webkit-filter: brightness(30%);
-          filter: brightness(30%);
-  position: fixed;
-  z-index: -1;
-  -o-object-fit: cover;
-     object-fit: cover;
+.main .introduce .introduce_text h1 {
+  font-size: 4.5rem;
+  letter-spacing: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.main .introduce .introduce_text p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.main .introduce .introduce_text .arrow {
+  font-size: 4rem;
+  -webkit-animation: infinite ease-in-out arrowAnimation 1.5s;
+          animation: infinite ease-in-out arrowAnimation 1.5s;
+}
+
+.main .scroll_m2u {
+  -webkit-filter: brightness(20%);
+          filter: brightness(20%);
+  background: url(../../assets/M2U_person.jpg) fixed no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
+}
+
+.main .introduce_two {
+  width: 100vw;
+  height: 500vh;
+}
+
+@-webkit-keyframes arrowAnimation {
+  0%, 100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes arrowAnimation {
+  0%, 100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
 }
 /*# sourceMappingURL=main.css.map */
