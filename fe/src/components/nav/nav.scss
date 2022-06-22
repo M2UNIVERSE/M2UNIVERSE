@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     .left {
-        margin-left: 5rem;
+        margin-left: 12rem;
         a {
             color: white;
             font-size: 1.8rem;
@@ -21,7 +21,7 @@
         }
     }
     .right {
-        margin-right: 5rem;
+        margin-right: 12rem;
         margin-top: 0.5rem;
         cursor: pointer;
         display: flex;
@@ -32,4 +32,9 @@
             color: white;
         }
     }
+}
+
+.navOn {
+    background: white;
+    transition: 0.6s ease-in-out;
 }

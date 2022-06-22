@@ -5,6 +5,7 @@
 font-family: 'Noto Sans KR', sans-serif; */
 
 * {
+    user-select: none;
     list-style: none;
     text-decoration: none;
     font-size: 14px;

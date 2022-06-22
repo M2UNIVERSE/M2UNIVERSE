@@ -17,7 +17,7 @@
 }
 
 .nav-bar .left {
-  margin-left: 5rem;
+  margin-left: 12rem;
 }
 
 .nav-bar .left a {
@@ -33,7 +33,7 @@
 }
 
 .nav-bar .right {
-  margin-right: 5rem;
+  margin-right: 12rem;
   margin-top: 0.5rem;
   cursor: pointer;
   display: -webkit-box;
@@ -46,5 +46,11 @@
 
 .nav-bar .right a {
   color: white;
+}
+
+.navOn {
+  background: white;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 /*# sourceMappingURL=nav.css.map */

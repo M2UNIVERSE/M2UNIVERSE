@@ -2,8 +2,11 @@ import React from 'react'
 import './main.css'
 import m2uBackGround from '../../assets/BackgroundVideo.mp4'
 import m2uBackGround2 from '../../assets/M2U_person.jpg';
+import { useEffect } from 'react';
 
 const Main = () => {
+    window.addEventListener('scroll',()=>{console.log("hi");});
+
     return (
         <section className="main">
             <div className="introduce">
